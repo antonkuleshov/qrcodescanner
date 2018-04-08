@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../../../favicon.ico">
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('/css/dashboard.css') }}" rel="stylesheet">
+        {% block stylesheets %}{% endblock %}
+
+        	<style type="text/css">/* Chart.js */
+        	@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+        	</style>
+
+    <body>
+        {% block body %}{% endblock %}
+
+        <script src="{{ asset('/js/jquery-3.3.1.min.js') }}"></script>
+        <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
